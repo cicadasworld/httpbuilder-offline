@@ -51,8 +51,8 @@ REM ================================================================
 REM
 :SetDevEnv
 
-set JAVA_HOME=jre1.8.0_251
-set GROOVY_HOME=groovy-3.0.5
+set JAVA_HOME=jre
+set GROOVY_HOME=groovy
 set PATH=%PATH%;%JAVA_HOME%\bin;%GROOVY_HOME%\bin;
 
 :Done
