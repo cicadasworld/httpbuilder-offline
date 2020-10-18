@@ -16,7 +16,8 @@ grape install org.codehaus.groovy.modules.http-builder http-builder 0.7.2
 httpbuilder
  │  env.bat <-- 环境变量设置批处理
  │  srcript.groovy
- ├─grapes   <-- 依赖包(-Dgrape.root所指定的目录)
+ ├─repo     <-- 本地依赖仓库(-Dgrape.root所指定的目录)
+ │   └─grapes
  ├─groovy   <-- groovy运行环境
  └─jre      <-- jre运行环境
 ```
@@ -119,7 +120,7 @@ set PATH=%PATH%;%JAVA_HOME%\bin;%GROOVY_HOME%\bin;
 运行env.bat产生命令行快捷方式env.lnk，双击打开命令行快捷方式，执行如下命令
 
 ``` shell
-groovy -Dgrape.root=grapes srcipt.groovy
+groovy -Dgrape.root=repo srcipt.groovy
 ```
 
 
